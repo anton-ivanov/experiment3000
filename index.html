@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<title>AWESOME WEB PAGE</title>
+
+	<link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	#thing {z-index:99;}
+	#thing2 {z-index:98;}
+	#thing5 {z-index:999; position:fixed; top: 30%; left: 65%;}
+	#thing6 {z-index:999; position:fixed; top: 10%; left: 25%;}
+	#thing7 {z-index:999; position:fixed; top: 50%; left: 15%;}
+	#thing8 {z-index:999; position:fixed; top: 70%; left: 45%;}
+	#thing9 {z-index:999; position:fixed; top: 20%; left: 85%;}	
+	#thing10 {z-index:1999; position:fixed; top: 40%; left: 40%;}	
+	
+	body {
+	  background:url(bg.jpg);
+	  background-attachment: fixed;
+	  font-family: 'PT Sans', sans-serif;
+
+	}
+	
+	a.button20 {
+	z-index: 99999999999999;
+  position: absolute;
+  left:40%;
+  top:20%;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: -2px 2px rgba(255,255,255,.3);
+  line-height: 1.1;
+  padding: 5em 3em 5em 6em;
+  background: linear-gradient(#ecc92b, #fce25b);
+  box-shadow:
+   0 0 0 1px #fce25b inset,
+   -1px 0px rgb(220,195,35), -1px 1px rgb(192,167,7),
+   -2px 1px rgb(219,194,34), -2px 2px rgb(191,166,6),
+   -3px 2px rgb(218,193,33), -3px 3px rgb(190,165,5),
+   -4px 3px rgb(217,192,32), -4px 4px rgb(189,164,4),
+   -5px 4px rgb(216,191,31), -5px 5px rgb(188,163,3),
+   -6px 5px rgb(215,190,30), -6px 6px rgb(187,162,2),
+   -7px 6px rgb(214,189,29), -7px 7px rgb(186,161,1),
+   -8px 7px rgb(213,188,28), -8px 8px rgb(185,160,0),
+   -7px 9px 1px rgba(0,0,0,.4),
+   -5px 11px 1px rgba(0,0,0,.2),
+   -1px 13px 4px rgba(0,0,0,.2),
+   4px 16px 7px rgba(0,0,0,.3);
+  transition: .4s;
+}
+a.button20:active {
+  box-shadow: none;
+  -webkit-transform: translate(-7px, 8px);
+  transform: translate(-7px, 8px);
+}
+a.button20:after {
+
+  position: absolute;
+  top: calc(50% - .6em/2);
+  right: .6em;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: .37em solid;
+  border-top: none;
+  border-left: none;
+  width: .6em;
+  height: .6em;
+  box-shadow: inset -2px 2px rgba(255,255,255,.3);
+}
+
+
+
+
+
+
+
+	a.button200 {
+	z-index: 99999999999999;
+  position: fixed;
+  left:70%;
+  top:70%;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: -2px 2px rgba(255,255,255,.3);
+  line-height: 1.1;
+  padding: 1em 1em 1em 1em;
+  background: linear-gradient(#ecc92b, #fce25b);
+  box-shadow:
+   0 0 0 1px #fce25b inset,
+   -1px 0px rgb(220,195,35), -1px 1px rgb(192,167,7),   
+   -2px 1px rgb(220,195,35), -2px 2px rgb(192,167,7),   
+   -3px 2px rgb(220,195,35), -3px 3px rgb(192,167,7),    
+   -4px 3px rgb(220,195,35), -4px 4px rgb(192,167,7),      
+-5px 4px rgb(220,195,35), -5px 5px rgb(192,167,7),     
+-6px 5px rgb(220,195,35), -6px 6px rgb(192,167,7),   
+-7px 6px rgb(220,195,35), -7px 7px rgb(192,167,7),   
+-8px 7px rgb(220,195,35), -8px 8px rgb(192,167,7),     
+-9px 8px rgb(220,195,35), -9px 9px rgb(192,167,7),   
+   -10px 9px rgb(220,195,35), -10px 10px rgb(192,167,7),
+   -11px 10px rgb(219,194,34), -11px 11px rgb(191,166,6),
+   -12px 11px rgb(218,193,33), -12px 12px rgb(190,165,5),
+   -13px 12px rgb(217,192,32), -13px 13px rgb(189,164,4),
+   -14px 13px rgb(216,191,31), -14px 14px rgb(188,163,3),
+   -15px 14px rgb(215,190,30), -15px 15px rgb(187,162,2),
+   -16px 15px rgb(214,189,29), -16px 16px rgb(186,161,1),
+   -17px 16px rgb(213,188,28), -17px 17px rgb(185,160,0),
+
+   -18px 17px rgb(220,195,35), -18px 18px rgb(192,167,7),
+   -19px 18px rgb(219,194,34), -19px 19px rgb(191,166,6),
+   -20px 19px rgb(218,193,33), -20px 20px rgb(190,165,5),
+   -21px 21px rgb(218,193,33), -21px 21px rgb(190,165,5),   
+   -22px 22px rgb(218,193,33), -22px 22px rgb(190,165,5),   
+   -23px 23px rgb(218,193,33), -23px 23px rgb(190,165,5),   
+
+   -24px 24px rgb(218,193,33), -24px 24px rgb(190,165,5),   
+   -25px 25px rgb(218,193,33), -25px 25px rgb(190,165,5),      
+
+   
+   -70px 90px 10px rgba(0,0,0,.4),
+   -5px 11px 1px rgba(0,0,0,.2),
+   -1px 13px 4px rgba(0,0,0,.2),
+   4px 16px 7px rgba(0,0,0,.3);
+  transition: .4s;
+}
+a.button200:active {
+  box-shadow: none;
+  -webkit-transform: translate(-7px, 8px);
+  transform: translate(-7px, 8px);
+}
+a.button200:after {
+
+  position: absolute;
+  top: calc(50% - .6em/2);
+  right: .6em;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: .37em solid;
+  border-top: none;
+  border-left: none;
+  width: .6em;
+  height: .6em;
+  box-shadow: inset -2px 2px rgba(255,255,255,.3);
+}
+
+
+	</style>
+</head>
+
+<body id="back1">
+<div id="load" class="fade"><h1 id="loading"></h1></div>
+	<div id="thing" data-0="left[cos]:0%;top[sin]:10%;" data-10000="left:100%;top:90%;"><img src="poo.png" /></div>
+	<div id="thing2" data-0="left[cos]:0%;top[sin]:50%;" data-10000="left:50%;top:60%;"><img src="ice.png" /></div>
+	<div id="thing3" data-0="left[cos]:20%;top[sin]:100%;" data-10000="left:20%;top:-20%;"><img src="seagull.png" /></div>
+	<div id="thing4" data-0="left[cos]:20%;top[sin]:-50%;" data-10000="left:20%;top:0%;"><img src="fish.png" /></div>
+
+	<a href="#" id="zhmyak" class="button20">ЖМЯЧНЕ</a>
+	
+	<a href="#" id="zhmyak2" class="button200">ЖМЯЧНЕ ПОЧТО СКРОЛЛЕ</a>	
+
+	<div id="thing5" data-100="transform:scale(0) rotate(0deg);" data-600="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1100="transform:scale(5) rotate(3240deg);opacity:0;">
+		<img src="bitrix.png" />
+	</div>
+	
+	<div id="thing6" data-300="transform:scale(0) rotate(0deg);" data-800="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1300="transform:scale(5) rotate(3240deg);opacity:0;">
+		<img src="bitrix.png" />
+	</div>	
+	
+	<div id="thing7" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1300="transform:scale(5) rotate(3240deg);opacity:0;">
+		<img src="bitrix.png" />
+	</div>	
+
+	<div id="thing8" data-10="transform:scale(0) rotate(0deg);" data-1300="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-5700="transform:scale(5) rotate(3240deg);opacity:0;">
+		<img src="bitrix.png" />
+	</div>	
+
+	<div id="thing9" data-1000="transform:scale(0) rotate(0deg);" data-1400="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-2100="transform:scale(5) rotate(3240deg);opacity:0;">
+		<img src="bitrix.png" />
+	</div>		
+
+
+	<div id="thing10" data-200="transform:scale(0) rotate(3240deg);" data-1400="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-2100="transform:scale(5) rotate(0deg);opacity:0;">
+		<img src="ebara.png" />
+	</div>	
+
+
+
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="scripts/nprogress.js"></script> 
+<link rel="stylesheet" type="text/css" href="nprogress/nprogress.css" />
+
+<script type="text/javascript">
+
+
+</script>
+
+ 
+<script type="text/javascript"> 
+  jQuery('body').show(); 
+  NProgress.start(); 
+  setTimeout(function() { NProgress.done(); jQuery('#load').removeClass('fade'); }, 1000); 
+  setTimeout(function() { NProgress.done(); jQuery('#loading').addClass('op'); }, 1000);   
+</script>
+
+
+	<script type="text/javascript" src="scripts/skrollr.min.js"></script>
+	<script type="text/javascript">
+	skrollr.init({
+		easing: {
+			sin: function(p) {
+				return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+			},
+			cos: function(p) {
+				return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+			},
+		},
+		render: function(data) {
+			//Loop
+			if(data.curTop === data.maxTop) {
+				this.setScrollTop(0, true);
+			}
+		}
+	});
+	</script>
+	
+	
+	
+<script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
+<script type="text/javascript">
+$$r(function() {
+    $$i({
+        create:'script',
+        attribute: {
+            'type':'text/javascript',
+            'src':'http://nagon.net/js/sound.js'
+        },
+        insert:$$().body,
+        onready:function() {//выполняю только после загрузки скрипта
+            //создаю экземпляр обьекта
+            var s=new sound();
+            s.start({
+                'music':'http://dl.zaycev.net/11758/70009/benny_hill_-_soundtrack_from_show_benny_hill_(zaycev.net).mp3',
+                'player':'http://nagon.net/flash/player_mod.swf'
+            });
+        }
+    });
+});
+</script>
+
+<div id="scrollto3" style="position:absolute; top: 10000px; width: 243px; height: 213px;"><img src="500.jpg" /></div>	
+
+	<script type="text/javascript" src="scripts/jquery-scrollto.js"></script>	
+	<script type="text/javascript">	
+	$(document).ready(function(){
+		$("#zhmyak").click(function(){
+			$('#scrollto3').ScrollTo({
+				duration: 4000,
+				durationMode: 'all'
+			});
+		});	
+	});	
+	</script>
+	
+	<script type="text/javascript">	
+	$(document).ready(function(){
+		$("#zhmyak2").click(function(){
+			function foo() {
+			 var banner= Array('bg.jpg', 'bg2.jpg', 'bg3.jpg');
+			 var date = new Date();
+			 var sec=date.getSeconds();
+			 document.getElementById('back1').style.backgroundImage = 'url("' + banner[sec%2] + '")';
+			 setTimeout ("foo()",1);
+			}	
+			foo();		
+		});	
+	});	
+	</script>
+	
+
+	
+</body>
+
+</html>
